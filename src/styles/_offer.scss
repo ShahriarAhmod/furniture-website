@@ -1,0 +1,56 @@
+.offer{
+  width: 90%;
+  margin: 0 auto;
+  padding: 4rem 0;
+
+  .offer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.offer-card{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $slide-bg;
+  padding: 2rem 0;
+   @media (max-width:760px) {
+     width: 100%;
+   }
+
+  img{
+    width: 40%;
+    @media (max-width:760px) {
+      width: 30%;
+    }
+  }
+  .banner-info{
+    width: 60%;
+    p{
+      color: $orange;
+    }
+    h2{
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    @media (max-width:760px) {
+      width: 70%;
+      h2{
+        font-size: 1.2rem;
+      }
+      
+    }
+
+    a{
+      background-color: $white;
+      color: $black;
+      padding: 0.4rem;
+      font-weight: 500;
+      box-shadow: 2px 4px 4px rgba($color: $black, $alpha: 0.2);
+    }
+  }
+}

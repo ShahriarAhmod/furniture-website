@@ -1,0 +1,113 @@
+#shop{
+
+
+}
+
+.section-titles{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+padding-block: 2rem;
+
+    h4{
+        line-height: 0;
+        font-weight: 500;
+        color: $orange;
+    }
+    h2{
+        line-height: 80%;
+        font-size: $title;
+        color: $black;
+    }
+}
+
+.product-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    // background-color: red;
+    // padding-bottom: 2rem;
+}
+.card{
+    width: 32%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+
+    @media (max-width:760px) {
+        width: 100%;
+    }
+}
+
+.product-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.addToCart{
+    text-transform: uppercase;
+    min-height: 40px;
+    background-color: $black;
+    width: 100%;
+    position: absolute;
+    bottom: 75px;
+    left: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+    padding: 0px;
+    transition: opacity 0.3s ease-in;
+ 
+    transition-delay: 0.3s;
+
+}
+.card:hover .addToCart{
+    // bottom: 100px;
+    opacity: 0.8;
+}
+
+
+.product-info{
+    .product-name{
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 0;
+    }
+    .product-price{
+        font-size: 0.900rem;
+    }
+}
+
+.more-collection{
+   width: 90%;
+   margin: 2rem auto;
+display: flex;
+justify-content: center;
+align-items: center;
+   a{
+       text-align: center;
+       text-transform: uppercase;
+       width: 20%;
+       background: transparent;
+       border: 1px solid $black;
+       padding: 0.4rem;
+       color: $black;
+       font-weight: 500;
+       transition: width 0.3s;
+
+       &:hover{
+           background-color: $black;
+           border: 0;
+           color: $white;
+       }
+   }
+}

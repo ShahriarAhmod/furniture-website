@@ -1,0 +1,67 @@
+
+.footer{
+    background: $black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 2rem 0;
+   
+    @media (max-width:760px) {
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+    }
+    
+   
+
+   >*{
+        width: 23%;
+   
+        @media (max-width:760px) {
+            width: 50%;
+        }
+        span{
+            font-size: 1.2rem;
+            line-height: 140%;
+           
+        }
+
+        p{
+            font-size: 0.8rem;
+        }
+
+        li{
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: 0.3s ease-in;
+
+            &:hover{
+                color: $orange;
+            }
+        }
+
+    }
+
+
+    .newsletter{
+  
+        input{
+            border: 0;
+            outline: none;
+font-size: 0.7rem;
+padding: 0.6rem 0;
+text-align: left;
+text-transform: capitalize;
+width: 80%;
+
+
+        }
+    }
+}
+
+.email-icon{
+    font-size: 2rem;
+}

@@ -1,0 +1,16 @@
+install react app
+install contentful
+install react icon
+install slider/swiper js
+get data from contentful
+get font & color
+set variables
+create header
+trending 
+product
+offer
+blog
+instagram
+footer
+
+

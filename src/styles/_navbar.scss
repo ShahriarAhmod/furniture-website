@@ -1,0 +1,105 @@
+.navbar{
+    min-height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+   
+    position: absolute;
+    inset: 0 0 100% 0;
+    z-index: 1;
+    @media (max-width:760px) {
+    //   justify-content: flex-end;
+    background-color: white;
+    width: 100%;
+    min-height: 60px;
+    }
+}
+.navbar.active{
+    position: fixed;
+    width: 100%;
+    // padding: 0 1rem;
+    background-color: white;
+    min-height: 60px;
+    box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.1);
+    max-width: 1980px;
+}
+.logo{
+    width: 100px;
+}
+.nav-list{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: all 0.3s ;
+
+
+    @media (max-width:760px) {
+        position: absolute;
+        flex-direction: column;
+        align-items: start;
+        top: -100vh;
+        left: 0px;
+        background-color: rgb(227, 5, 5);
+        width: 105vw;
+        margin: 0 auto;
+        min-height: 90vh;
+      padding: 0;
+      justify-content: flex-start;
+      padding-top: 1rem;
+      z-index: 999;
+        opacity: 1;
+
+        
+        
+    }
+  
+    .list-item{
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #232323;
+        cursor: pointer;
+        @media (max-width:760px) {
+            padding-left: 2.5rem;
+            font-size: 1.5rem;
+            color: #232323;
+            padding-top: 1rem;
+            font-weight: 600;
+        }
+    &:hover{
+        color: var(--orange);
+    }
+    }
+
+}
+
+.cart-item{
+    display: flex;
+    flex-wrap: wrap;
+    >*{
+        padding: 1rem;
+        font-size: 1.5rem;
+        color: #232323;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.3s ;
+    
+        &:hover{
+            color:var(--orange)
+        }
+        @media (max-width:768px) {
+            padding: 0.5rem;
+            display: block;
+        }
+    }
+}
+
+
+.nav-list.active{
+    top: 60px;
+}
